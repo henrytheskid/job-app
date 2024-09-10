@@ -1,0 +1,157 @@
+@font-face {
+    font-family: regular;
+    src: url(/assets/font/regular.otf); 
+  }
+  @font-face {
+    font-family: regular;
+    src: url(/assets/font/regular.otf);
+  }
+    html {
+    font-family: regular;
+  }
+  *, *::after, *::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background: rgb(17, 17, 17);
+  }
+  #overlay-toggle {
+    position:absolute;
+    display: none;
+  }
+  .debold{
+    font-weight:normal
+  }
+  .back {
+  width: 100%;
+  }
+  .test-fix {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+  .overlay {
+    z-index: 1;
+    background-color: black;
+  }
+  .overlay label {
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    height: 100vw;
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+  }
+  .no-hover {
+    display: block;
+  }
+  .hover {
+    display: none;
+  }
+  .fullscreen {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-height: 100vh;
+    min-width: 100vw;
+  }
+  .text-content {
+    background: rgba(0, 0, 0, 0);
+    display: grid;
+    place-content: center;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.849);
+  }
+  .text-content h1 {
+    font-size: 3rem;
+    font-weight: 800;
+  }
+  
+  
+  
+  
+  .text-content p {
+    padding-top: 30px;
+    padding-right: 10px;
+    padding-bottom: 31px;
+    padding-left: 10px;
+    font-size: 1.7rem;
+    font-weight: 500;
+    line-height: 0.0;
+    color: rgba(255, 255, 255, 0.699);
+    display: flex;
+  }
+  
+  
+  
+  .text-content a {
+    padding-top: 30px;
+    padding-right: 10px;
+    padding-bottom: 31px;
+    padding-left: 10px;
+    font-size: 1.3rem;
+    line-height: 0.0;
+    color: #717171;
+    display: block;
+    text-align: left;
+  }
+  a:hover {
+    transition:.4s!important;
+    color:#fff!important
+  }
+  a {
+      transition: color 0.25s ease-in-out;
+      color: #cccccc;
+  }
+      
+  a:hover {
+      color: white;
+      text-shadow: 0px 0px 12px #CCCCCC;
+  }
+  #divider {
+      height: 1px;
+      background: #717171;
+      border: none;
+      outline: none;
+      transition: 0.4s;
+      margin: auto;
+      width: 90%;
+  }
+  
+  
+  #overlay-toggle:checked ~ .overlay {
+    animation-fill-mode: forwards;
+    animation-name: fade, hide;
+    animation-delay: 0s, 600ms;
+    animation-duration: 600ms, 1ms;
+  }
+  #overlay-toggle:checked ~ .overlay label {
+    animation-fill-mode: forwards;
+    animation-name: fade;
+    animation-delay: 0s;
+    animation-duration: 500ms;
+  }
+  @media(hover: hover) {
+    .hover {
+      display: block;
+    }
+    .no-hover {
+      display: none;
+    }
+  }
+  @keyframes fade{
+    to {
+      opacity: 0;
+    }
+  }
+  @keyframes hide {
+    to {
+      visibility: hidden;
+    }
+  }
+  .bg-video {
+      filter: brightness(40%) blur(1px);
+    }

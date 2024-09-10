@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #000; /* Black background */
+            color: #fff; /* Default text color */
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            background-color: #1a1a1a; /* Matte black background for container */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+        }
+        h1 {
+            font-size: 36px;
+            font-family: 'Derk', sans-serif; /* Ensure 'Derk' is properly imported or available */
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Glowing white text */
+            margin: 20px 0;
+        }
+        label, p {
+            display: block;
+            margin-bottom: 20px;
+            font-size: 16px;
+            color: #fff; /* White text color */
+            text-shadow: 0 0 5px rgba(255, 255, 255, 0.6); /* Glowing white text */
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .gallery img {
+            max-width: 250px; /* Adjusted size */
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+        }
+        .gallery-item {
+            flex: 1 1 calc(33.333% - 20px);
+            box-sizing: border-box;
+            max-width: calc(33.333% - 20px);
+        }
+        @media (max-width: 768px) {
+            .gallery-item {
+                flex: 1 1 calc(50% - 20px);
+                max-width: calc(50% - 20px);
+            }
+        }
+        @media (max-width: 480px) {
+            .gallery-item {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
+        }
+        .projects {
+            margin-top: 20px;
+            font-size: 16px;
+            color: #fff; /* White text color */
+            text-shadow: 0 0 5px rgba(255, 255, 255, 0.6); /* Glowing white text */
+        }
+        .projects a {
+            color: #1e90ff; /* Light blue color for links */
+            text-decoration: none;
+        }
+        .projects a:hover {
+            text-decoration: underline;
+        }
+        video {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- The Start Section -->
+        <h1>The Start</h1>
+        <label>This is where it all began; this is personal to me.</label>
+        <p> My first project took off quickly, reaching over 15,000 followers and earning more than $4,000 in just a week. I was around 13-14 at the time, but I had to shut it down because of age restrictions. Even though it was a setback, I didn't let it stop me.</p>
+        <p> Over the past 3-4 years, I have continued to develop my skills in marketing and sales. I am now eager to leverage this experience to start my own venture and apply these skills to assist companies through internships and professional roles.</p>
+        
+        <!-- Video Section -->
+        <video controls>
+            <source src="https://cdn.discordapp.com/attachments/872858435589386281/1279515738851250304/RPReplay_Final1663529121.MP4?ex=66d4b964&is=66d367e4&hm=0cd3a82169dcc1669a5499a342fcac32f02f5bb5716b97be329cfcd9688c97ff&" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <h1>Past Projects</h1>
+        <label>During my freshman and sophomore years, I was dedicated to building a presence on social media. I successfully grew a new TikTok page to over 100,000 followers organically. Throughout this journey, I attracted several sponsors who paid for promotional marketing of their brands.</label>
+
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="https://media.discordapp.net/attachments/872858435589386281/1279520567216836608/IMG_1680.png?ex=66d4bde3&is=66d36c63&hm=5c73335eba742a53aa58e367c05c77496168b466f361799ff806a467e661192a&=&format=webp&quality=lossless&width=323&height=700" alt="Image 1">
+            </div>
+            <div class="gallery-item">
+                <img src="https://media.discordapp.net/attachments/872858435589386281/1279520567615029248/IMG_1681.png?ex=66d4bde3&is=66d36c63&hm=c7a91add5acb819bba28ea133a3fb0b538417bb214ab981b331994d49ff001ac&=&format=webp&quality=lossless&width=323&height=700" alt="Image 2">
+            </div>
+            <div class="gallery-item">
+                <img src="https://media.discordapp.net/attachments/872858435589386281/1279517613696745614/IMG_1676.png?ex=66d4bb23&is=66d369a3&hm=0152777cbc262016ed35224bb48d3ff5097b30898e45f96c3ecaf5efc2ef165c&=&format=webp&quality=lossless&width=323&height=700" alt="Image 3">
+            </div>
+            <div class="gallery-item">
+                <img src="https://media.discordapp.net/attachments/872858435589386281/1279517613029982248/IMG_1678.png?ex=66d4bb23&is=66d369a3&hm=244fe13f97e601c755f189806b44971ab79c1f2687455794b0438bcb1473878f&=&format=webp&quality=lossless&width=323&height=700" alt="Image 4">
+            </div>
+        </div>
+
+        <div class="projects">
+            <h2>Additional Work</h2>
+            <p>Throughout high school, I spent hours online networking and learning a bit of coding. I have created projects using Python, Java, and CSS. While I wouldn’t call myself a professional coder, I can build websites and tools by researching and utilizing various online resources. You can explore some of my projects on my GitHub profile:</p>
+            <a href="https://github.com/henrytheskid" target="_blank">View My GitHub Projects</a>
+        </div>
+
+        <div class="projects">
+            <h2>Personal Information</h2>
+            <p>This website was created during a random day of summer break, reflecting a day's worth of work. While it's a simple project, it serves as a showcase of some of my work and provides insights into my interests and background.</p>
+            <p>I have a strong passion for sales and marketing and am driven by opportunities where I can engage deeply with these fields. My ideal job is one that aligns with this passion—whether as a coder or a marketer. I find immense satisfaction in working on projects that I would gladly do for free, as they genuinely interest me.</p>
+            <p>The projects displayed here are accomplishments from my high school years, demonstrating my commitment and skills in these areas. As of August 2024, I am 17 years old, and I am eager to continue developing my expertise and pursuing opportunities in sales, marketing, and coding.</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
